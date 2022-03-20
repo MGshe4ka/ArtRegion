@@ -47,6 +47,7 @@ $fontColor: #363c49;
 
       .progress__help {
         color: white;
+        padding: 0 15px 0 15px;
       }
     }
   }
@@ -75,6 +76,7 @@ $fontColor: #363c49;
     padding: calc(
       10px + (40 - 10) * ((100vw - 320px) / (767 - 320))
     ) !important;
+    margin-bottom: 30px;
   }
 
   .progress__title {
@@ -82,5 +84,4 @@ $fontColor: #363c49;
       30px + (62 - 30) * ((100vw - 320px) / (767 - 320))
     ) !important;
   }
-  
 }

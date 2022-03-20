@@ -52,6 +52,7 @@
 
 .progress .progress__content .progress__block-text .progress__help {
   color: white;
+  padding: 0 15px 0 15px;
 }
 
 @media (max-device-width: 767px) {
@@ -71,6 +72,7 @@
   }
   .progress__block-text {
     padding: calc( 10px + (40 - 10) * ((100vw - 320px) / (767 - 320))) !important;
+    margin-bottom: 30px;
   }
   .progress__title {
     font-size: calc( 30px + (62 - 30) * ((100vw - 320px) / (767 - 320))) !important;

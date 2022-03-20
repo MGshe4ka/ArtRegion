@@ -75,7 +75,7 @@
     padding-bottom: calc( 10px + (20 - 10) * ((100vw - 320px) / (767 - 320))) !important;
   }
   p {
-    font-size: calc( 18px + (32 - 19) * ((100vw - 320px) / (767 - 320))) !important;
+    font-size: calc( 18px + (32 - 18) * ((100vw - 320px) / (767 - 320))) !important;
     line-height: calc( 25px + (40 - 20) * ((100vw - 320px) / (767 - 320))) !important;
   }
   .field__art-designe {

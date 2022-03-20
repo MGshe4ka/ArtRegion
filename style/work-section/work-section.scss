@@ -1,0 +1,115 @@
+$fontColor: #363c49;
+
+.work {
+  .work__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .work__image {
+      object-fit: cover;
+      height: 450px;
+      width: 700px;
+      max-width: 840px;
+      max-height: 840px;
+
+      background-image: url(../../img/work.webp);
+      background-size: 100%;
+      background-repeat: no-repeat;
+    }
+
+    .work__image_visible {
+      display: none;
+      object-fit: cover;
+      height: 450px;
+      width: 700px;
+      max-width: 840px;
+      max-height: 840px;
+
+      background-image: url(../../img/work.webp);
+      background-size: 100%;
+      background-repeat: no-repeat;
+    }
+
+    .work__block-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+
+      margin: 0 0 0 40px;
+      height: 640px;
+
+      .work__title {
+        font-family: "Poppins", sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 62px;
+        line-height: 1;
+        text-align: center;
+
+        color: $fontColor;
+        margin-top: 80px;
+      }
+      .work__comfort_block {
+        background-color: $fontColor;
+        border-radius: 50px 0 0 50px;
+        padding: 40px 0 40px 0;
+        margin: 0 -15px 80px 0;
+
+        .work__comfort {
+          color: white;
+
+          padding: 0 15px 0 15px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-device-width: 767px) {
+  .work__content {
+    flex-direction: column;
+    justify-content: stretch !important;
+  }
+  .work__image {
+    display: none !important;
+  }
+
+  .work__image_visible {
+    display: block !important;
+    width: calc(
+      280px + (700 - 280) * ((100vw - 320px) / (767 - 320))
+    ) !important;
+    height: calc(
+      280px + (570 - 280) * ((100vw - 320px) / (767 - 320))
+    ) !important;
+  }
+
+  .work__title {
+    font-size: calc(
+      30px + (62 - 30) * ((100vw - 320px) / (767 - 320))
+    ) !important;
+
+    margin: 0 0 20px 0 !important;
+  }
+
+  .work__block-text {
+    height: auto !important;
+    margin: 0 !important;
+    justify-content: stretch !important;
+
+    padding-top: calc(
+      10px + (40 - 10) * ((100vw - 320px) / (767 - 320))
+    ) !important;
+  }
+
+  .work__comfort_block {
+    margin-bottom: 10px !important;
+    padding: calc(
+      10px + (40 - 10) * ((100vw - 320px) / (767 - 320))
+    ) !important;
+  }
+  .work__comfort {
+  }
+}
