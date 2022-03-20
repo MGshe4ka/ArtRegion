@@ -1,0 +1,86 @@
+$fontColor: #363c49;
+
+.progress {
+  .progress__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .img-mobile {
+      display: none;
+    }
+
+    .progress__gif {
+      order: 2;
+
+      object-fit: cover;
+      min-height: 640px;
+      min-width: 640px;
+      max-width: 840px;
+      max-height: 840px;
+
+      background-image: url(../../img/idea.gif);
+      background-size: 100%;
+      background-repeat: no-repeat;
+    }
+
+    .progress__block-text {
+      order: 1;
+
+      background-color: $fontColor;
+      border-radius: 0 50px 50px 0;
+      padding: 40px 0 40px 0;
+      margin-left: -15px;
+
+      .progress__title {
+        margin: 0 0 20px 0;
+
+        font-family: "Poppins", sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 62px;
+        line-height: 1;
+        text-align: center;
+
+        color: white;
+      }
+
+      .progress__help {
+        color: white;
+      }
+    }
+  }
+}
+
+@media (max-device-width: 767px) {
+  .progress__content {
+    flex-direction: column;
+  }
+
+  .img-mobile {
+    width: calc(
+      280px + (700 - 280) * ((100vw - 320px) / (767 - 320))
+    ) !important;
+    margin-bottom: calc(
+      30px + (80 - 30) * ((100vw - 320px) / (767 - 320))
+    ) !important;
+    display: block !important;
+  }
+
+  .progress__gif {
+    display: none !important;
+  }
+
+  .progress__block-text {
+    padding: calc(
+      10px + (40 - 10) * ((100vw - 320px) / (767 - 320))
+    ) !important;
+  }
+
+  .progress__title {
+    font-size: calc(
+      30px + (62 - 30) * ((100vw - 320px) / (767 - 320))
+    ) !important;
+  }
+  
+}

@@ -1,0 +1,89 @@
+$fontColor: #363c49;
+
+.main {
+  .main__conteiner {
+    .field__content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0 0 0 0;
+
+      .field__gif {
+        object-fit: cover;
+        height: 450px;
+        width: 700px;
+        max-width: 800px;
+        max-height: 450px;
+
+        background-image: url(../../img/poporations.gif);
+        background-size: 100%;
+        background-repeat: no-repeat;
+      }
+      .field__text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex: 1 1 auto;
+        margin: 40px 0 0 0;
+
+        max-width: 55%;
+        min-height: 100%;
+
+        .field__h1 {
+          font-family: "Poppins", sans-serif;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 62px;
+          line-height: 1;
+          text-align: center;
+
+          color: $fontColor;
+
+          padding: 0 0 20px 0;
+        }
+
+        .field__art-designe {
+          padding-top: 80px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-device-width: 767px) {
+  .field__content {
+    margin-right: 0 !important;
+    justify-content: center !important;
+  }
+
+  .field__gif {
+    display: none;
+  }
+
+  .field__text {
+    max-width: 100% !important;
+  }
+
+  .field__h1 {
+    font-size: calc(
+      30px + (62 - 30) * ((100vw - 320px) / (767 - 320))
+    ) !important;
+    padding-bottom: calc(
+      10px + (20 - 10) * ((100vw - 320px) / (767 - 320))
+    ) !important;
+  }
+
+  p {
+    font-size: calc(
+      18px + (32 - 18) * ((100vw - 320px) / (767 - 320))
+    ) !important;
+    line-height: calc(
+      25px + (40 - 20) * ((100vw - 320px) / (767 - 320))
+    ) !important;
+  }
+  .field__art-designe {
+    padding-top: calc(
+      30px + (80 - 30) * ((100vw - 320px) / (767 - 320))
+    ) !important;
+  }
+}

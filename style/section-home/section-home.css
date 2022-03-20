@@ -1,0 +1,85 @@
+.main .main__conteiner .field__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 0 0 0;
+}
+
+.main .main__conteiner .field__content .field__gif {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 450px;
+  width: 700px;
+  max-width: 800px;
+  max-height: 450px;
+  background-image: url(../../img/poporations.gif);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.main .main__conteiner .field__content .field__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  margin: 40px 0 0 0;
+  max-width: 55%;
+  min-height: 100%;
+}
+
+.main .main__conteiner .field__content .field__text .field__h1 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 62px;
+  line-height: 1;
+  text-align: center;
+  color: #363c49;
+  padding: 0 0 20px 0;
+}
+
+.main .main__conteiner .field__content .field__text .field__art-designe {
+  padding-top: 80px;
+}
+
+@media (max-device-width: 767px) {
+  .field__content {
+    margin-right: 0 !important;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+  .field__gif {
+    display: none;
+  }
+  .field__text {
+    max-width: 100% !important;
+  }
+  .field__h1 {
+    font-size: calc( 30px + (62 - 30) * ((100vw - 320px) / (767 - 320))) !important;
+    padding-bottom: calc( 10px + (20 - 10) * ((100vw - 320px) / (767 - 320))) !important;
+  }
+  p {
+    font-size: calc( 18px + (32 - 19) * ((100vw - 320px) / (767 - 320))) !important;
+    line-height: calc( 25px + (40 - 20) * ((100vw - 320px) / (767 - 320))) !important;
+  }
+  .field__art-designe {
+    padding-top: calc( 30px + (80 - 30) * ((100vw - 320px) / (767 - 320))) !important;
+  }
+}
+/*# sourceMappingURL=section-home.css.map */
