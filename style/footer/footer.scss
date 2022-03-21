@@ -1,0 +1,113 @@
+$fontColor: #363c49;
+
+.footer {
+  position: relative;
+  //bottom: -10px;
+  .footer__conteiner {
+    background-color: $fontColor;
+
+    .footer__content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      height: 100px;
+      //bottom: 0;
+      .footer__logo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 250px;
+
+        .footer__logo-name {
+          font-family: "Poppins", sans-serif;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 36px;
+          line-height: 36px;
+
+          color: white;
+        }
+
+        .footer__logo-quote {
+          margin-top: 10px;
+          color: white;
+          font-size: 20px;
+          line-height: 20px;
+        }
+      }
+
+      .footer__navigation {
+      }
+      .navigation {
+        .navigation__list {
+          .navigation__items {
+            .navigation__link {
+            }
+          }
+        }
+      }
+      .footer__contacts {
+      }
+      .contacts {
+        .contacts-us {
+        }
+        .contacts__mail {
+        }
+        .contacts__numbers {
+        }
+        .contacts__font {
+          color: white;
+          font-size: 20px;
+          line-height: 35px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-device-width: 767px) {
+  .footer__conteiner {
+    // height: calc(
+    //   60px + (100 - 60) * ((100vw - 320px) / (767 - 320))
+    // ) !important;
+  }
+
+  .footer__logo-name {
+    font-size: calc(
+      25px + (36 - 25) * ((100vw - 320px) / (767 - 320))
+    ) !important;
+  }
+
+  .footer__logo-quote {
+    margin-top: calc(
+      5px + (10 - 5) * ((100vw - 320px) / (767 - 320))
+    ) !important;
+    font-size: calc(
+      12px + (20 - 12) * ((100vw - 320px) / (767 - 320))
+    ) !important;
+    line-height: calc(
+      15px + (20 - 15) * ((100vw - 320px) / (767 - 320))
+    ) !important;
+  }
+  .contacts__font {
+    font-size: calc(
+      14px + (20 - 14) * ((100vw - 320px) / (767 - 320))
+    ) !important;
+    line-height: calc(
+      20px + (35 - 20) * ((100vw - 320px) / (767 - 320))
+    ) !important;
+  }
+
+  .contacts__numbers {
+    font-size: calc(
+      14px + (20 - 14) * ((100vw - 320px) / (767 - 320))
+    ) !important;
+  }
+
+  .footer__logo {
+    max-width: calc(
+      150px + (250 - 150) * ((100vw - 320px) / (767 - 320))
+    ) !important;
+  }
+}
